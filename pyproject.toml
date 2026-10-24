@@ -1,0 +1,16 @@
+[project]
+name = "odoo-upgrade-scanner"
+version = "0.1.0"
+description = "Odoo Upgrade Readiness Scanner: what breaks in your custom modules on the next Odoo version"
+authors = [{ name = "Dhiren Narola", email = "hello@dhirennarola.com" }]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+odoo-upgrade-scanner = "upgrade_scanner.__main__:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

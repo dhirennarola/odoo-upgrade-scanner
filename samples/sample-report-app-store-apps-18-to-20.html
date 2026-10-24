@@ -1,0 +1,60 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Odoo upgrade readiness · Sample: Dhiren&#x27;s App Store apps</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfaf9;--raised:#fff;--subtle:#f4f3f1;--ink:#1c1a17;--soft:#55524c;--faint:#7d7972;--line:#e8e6e2;
+--accent:#4263eb;--accent-ink:#2b3f96;--accent-tint:#eef1fd;--ok:#2f9e44;--ok-tint:#ebfbee;--amber:#e8590c;
+--amber-tint:#fff1e6;--red:#c92a2a;--red-tint:#fff5f5;--radius:12px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 'Inter',ui-sans-serif,system-ui,'Segoe UI',Roboto,sans-serif}
+main{max-width:1040px;margin:0 auto;padding:48px 24px 64px}
+h1,h2{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.2;margin:0}
+h1{font-size:2.3rem}h2{font-size:1.45rem;margin:40px 0 12px}
+.eyebrow{color:var(--accent);font-weight:600;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
+.lead{color:var(--soft);font-size:1.08rem;max-width:720px;margin:12px 0 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:28px}
+.card{background:var(--raised);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.card b{display:block;font-family:'Fraunces',Georgia,serif;font-size:1.9rem;line-height:1.1}
+.card span{color:var(--faint);font-size:.85rem}
+table{width:100%;border-collapse:collapse;background:var(--raised);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;font-size:.93rem}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--subtle);color:var(--soft);font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em}
+tr:last-child td{border-bottom:0}.num{text-align:right;white-space:nowrap}
+.table-wrap{overflow-x:auto;border-radius:var(--radius)}.table-wrap table{min-width:560px}
+.pill{display:inline-block;border-radius:999px;padding:2px 10px;font-size:.78rem;font-weight:600;white-space:nowrap}
+.red{background:var(--red-tint);color:var(--red)}.amber{background:var(--amber-tint);color:var(--amber)}
+.green{background:var(--ok-tint);color:var(--ok)}
+.module{background:var(--raised);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-top:14px;break-inside:avoid}
+.module h3{margin:0;font-size:1.08rem}.meta{color:var(--faint);font-size:.85rem}
+.finding{border-top:1px solid var(--line);padding:12px 0 2px;display:grid;grid-template-columns:96px 1fr;gap:12px}
+.finding>div{min-width:0;overflow-wrap:anywhere}
+.where{font-family:ui-monospace,Consolas,monospace;font-size:.8rem;color:var(--accent-ink);word-break:break-all}
+.fix{color:var(--soft);font-size:.9rem;margin-top:4px}.fix::before{content:"Fix: ";font-weight:600;color:var(--ink)}
+.note{background:var(--accent-tint);border-radius:var(--radius);padding:12px 16px;color:var(--accent-ink);font-size:.92rem;margin-top:10px}
+footer{margin-top:48px;color:var(--faint);font-size:.85rem;border-top:1px solid var(--line);padding-top:16px}
+a{color:var(--accent)}
+@media (max-width:640px){main{padding:28px 16px}.finding{grid-template-columns:1fr;gap:4px}h1{font-size:1.8rem}}
+@media print{body{background:#fff}main{padding:0}.module,.card,table{box-shadow:none}}
+</style></head><body><main>
+<div class="eyebrow">Upgrade Readiness Report · Sample: Dhiren&#x27;s App Store apps</div>
+<h1>Odoo 18 to Odoo 20</h1>
+<p class="lead">3 custom modules checked against the Odoo 20 source:
+what will break, what Odoo itself has deprecated, and the effort. Generated 24 Oct 2026.</p>
+<div class="cards">
+<div class="card"><b>3</b><span>modules that break</span></div>
+<div class="card"><b>0</b><span>modules that need care</span></div>
+<div class="card"><b>0</b><span>modules ready</span></div>
+<div class="card"><b>2–4</b><span>working days, estimate</span></div>
+</div>
+<h2>Modules</h2>
+<div class="table-wrap"><table><thead><tr><th>Module</th><th>Status</th><th class="num">Lines</th><th class="num">Findings</th><th class="num">Effort</th></tr></thead>
+<tbody><tr><td><b>chatter_access_control</b><div class='meta'>Hide, Restrict or Disable Send Message and Log Note in Odoo 18 Chatter per User per Model</div></td><td><span class='pill red'>Breaks</span></td><td class='num'>407</td><td class='num'>2</td><td class='num'>0.5-1 d</td></tr><tr><td><b>chatter_panel_control</b><div class='meta'>Chatter Panel Control lets you hide chatter, move chatter to bottom, or reposition chatter panel on any Odoo form view</div></td><td><span class='pill red'>Breaks</span></td><td class='num'>264</td><td class='num'>3</td><td class='num'>0.5-1 d</td></tr><tr><td><b>pos_product_quick_favourites</b><div class='meta'>POS Product Quick Favourites - Dedicated Favourites Tab for Odoo Point of Sale</div></td><td><span class='pill red'>Breaks</span></td><td class='num'>490</td><td class='num'>7</td><td class='num'>1-2 d</td></tr></tbody></table></div>
+<h2>Findings, module by module</h2><div class='module'><h3>chatter_access_control <span class='pill red'>Breaks</span></h3><div class='meta'>Version 18.0.1.0.0 · 151 Python, 109 SCSS, 77 JavaScript, 70 XML</div><div class='finding'><div><span class='pill red'>Breaks</span></div><div><div>Imports @mail/chatter/web_portal/chatter, which no longer exists in the target version (the file moved or was removed), so the asset bundle fails to load.</div><div class='where'>static/src/js/chatter_access_control.js:3</div><div class='fix'>Find the new location of what you import and update the path.</div></div></div><div class='finding'><div><span class='pill red'>Breaks</span></div><div><div>Imports useState from @odoo/owl, but the Owl version in the target no longer has it.</div><div class='where'>static/src/js/chatter_access_control.js:7</div><div class='fix'>Use the new Owl API (for example, Odoo 20&#x27;s Owl replaced useState with proxy).</div></div></div></div><div class='module'><h3>chatter_panel_control <span class='pill red'>Breaks</span></h3><div class='meta'>Version 18.0.1.0.0 · 132 JavaScript, 55 SCSS, 41 XML, 36 Python</div><div class='finding'><div><span class='pill red'>Breaks</span></div><div><div>Imports useState from @odoo/owl, but the Owl version in the target no longer has it.</div><div class='where'>static/src/chatter_panel_control.js:4</div><div class='fix'>Use the new Owl API (for example, Odoo 20&#x27;s Owl replaced useState with proxy).</div></div></div><div class='finding'><div><span class='pill red'>Breaks</span></div><div><div>Imports @mail/chatter/web_portal/chatter, which no longer exists in the target version (the file moved or was removed), so the asset bundle fails to load.</div><div class='where'>static/src/chatter_panel_control.js:6</div><div class='fix'>Find the new location of what you import and update the path.</div></div></div><div class='finding'><div><span class='pill red'>Breaks</span></div><div><div>Imports @web/core/ui/ui_service, which no longer exists in the target version (the file moved or was removed), so the asset bundle fails to load.</div><div class='where'>static/src/chatter_panel_control.js:8</div><div class='fix'>Find the new location of what you import and update the path.</div></div></div></div><div class='module'><h3>pos_product_quick_favourites <span class='pill red'>Breaks</span></h3><div class='meta'>Version 18.0.1.0.0 · 169 Python, 138 JavaScript, 114 XML, 69 SCSS</div><div class='finding'><div><span class='pill red'>Breaks</span></div><div><div>Imports @point_of_sale/app/store/pos_hook, which no longer exists in the target version (the file moved or was removed), so the asset bundle fails to load.</div><div class='where'>static/src/components/product_card_star/product_card_star.js:2</div><div class='fix'>Find the new location of what you import and update the path.</div></div></div><div class='finding'><div><span class='pill red'>Breaks</span></div><div><div>Imports @point_of_sale/app/generic_components/category_selector/category_selector, which no longer exists in the target version (the file moved or was removed), so the asset bundle fails to load.</div><div class='where'>static/src/overrides/category_selector/category_selector.js:2</div><div class='fix'>Find the new location of what you import and update the path.</div></div></div><div class='finding'><div><span class='pill red'>Breaks</span></div><div><div>Imports @point_of_sale/app/store/pos_hook, which no longer exists in the target version (the file moved or was removed), so the asset bundle fails to load.</div><div class='where'>static/src/overrides/category_selector/category_selector.js:3</div><div class='fix'>Find the new location of what you import and update the path.</div></div></div><div class='finding'><div><span class='pill red'>Breaks</span></div><div><div>Template point_of_sale.CategorySelector hooks on t-foreach=&quot;props.categories&quot;, which is no longer in point_of_sale.CategorySelector in the target version, so this change is not applied (or the view fails to load).</div><div class='where'>static/src/overrides/category_selector/category_selector.xml:4</div><div class='fix'>Open the new parent and attach the change to the element that replaced it.</div></div></div><div class='finding'><div><span class='pill red'>Breaks</span></div><div><div>Imports @point_of_sale/app/store/pos_store, which no longer exists in the target version (the file moved or was removed), so the asset bundle fails to load.</div><div class='where'>static/src/overrides/pos_store/pos_store.js:2</div><div class='fix'>Find the new location of what you import and update the path.</div></div></div><div class='finding'><div><span class='pill red'>Breaks</span></div><div><div>Imports @point_of_sale/app/generic_components/product_card/product_card, which no longer exists in the target version (the file moved or was removed), so the asset bundle fails to load.</div><div class='where'>static/src/overrides/product_card/product_card.js:1</div><div class='fix'>Find the new location of what you import and update the path.</div></div></div><div class='finding'><div><span class='pill amber'>Needs care</span></div><div><div>_load_pos_data_fields(config_id) overrides product.template._load_pos_data_fields, which takes (config) in the target version. The arguments changed: check what each one now means.</div><div class='where'>models/product_template.py:21</div><div class='fix'>Match the new arguments (config) and adapt the code that uses them.</div></div></div></div>
+<h2>How to read this</h2>
+<p class="meta"><b>Breaks</b>: the module will fail to install or a feature stops working on Odoo 20.
+<b>Needs care</b>: still works, but Odoo has deprecated it or it needs a check. The effort range covers porting, the
+fixes listed and testing; it is confirmed in the fixed quote after a walkthrough. 12 findings in total;
+38 of the rules applied were read from Odoo 20's own deprecation notes.</p>
+<footer>Odoo Upgrade Readiness Check by Dhiren Narola · <a href="https://dhirennarola.com">dhirennarola.com</a> ·
+hello@dhirennarola.com · scanner 0.1.0</footer>
+</main></body></html>
