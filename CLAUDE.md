@@ -4,8 +4,9 @@
   scan client code only with written permission, outside the repo.
 - Python 3.11+, standard library only (no install needed). Tests: `python -m pytest -q tests`
   (fake target tree in the test; never needs the real Odoo source).
-- Branding of the report follows dhirennarola.com (`Documents\GitHub\portfolio\src\styles\tokens.css`):
-  warm neutrals, one indigo accent #4263eb, Fraunces headings, Inter text. Take colours from there.
+- Branding of the report follows the LIVE dhirennarola.com repo `Downloads\Dhiren Business\Branding\Website\portfolio-main`
+  (src/styles/tokens.css): navy surfaces, accent #2f7df6, teal #12b5c9 (blue-to-teal gradient), Space Grotesk headings,
+  Inter text. NOT `Documents\GitHub\portfolio`: same remote, but a stale checkout (last commit Jul 2026) with an old look.
 - Real sources on this PC: Odoo 18/19/20 in `Desktop\odoo\odoo18|19|20\odoo` (+ `enterprise`).
   Odoo 16/17 source is not here yet, so rules for 16→17 are from knowledge and marked so.
 - Index cache: `%LOCALAPPDATA%\odoo-upgrade-scanner\index-*.json`; bump `CACHE_VERSION` in

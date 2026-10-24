@@ -1,20 +1,25 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Odoo upgrade readiness · Sample: Dhiren&#x27;s App Store apps</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fbfaf9;--raised:#fff;--subtle:#f4f3f1;--ink:#1c1a17;--soft:#55524c;--faint:#7d7972;--line:#e8e6e2;
---accent:#4263eb;--accent-ink:#2b3f96;--accent-tint:#eef1fd;--ok:#2f9e44;--ok-tint:#ebfbee;--amber:#e8590c;
---amber-tint:#fff1e6;--red:#c92a2a;--red-tint:#fff5f5;--radius:12px}
+:root{--bg:#f5f8fc;--raised:#fff;--subtle:#eaf1f9;--ink:#17273d;--soft:#46586f;--faint:#53698a;--line:#dce5f0;
+--navy:#0a1a33;--navy-line:#1e3556;--td:#e9eff8;--td-soft:#a9bbd4;--accent:#2f7df6;--accent-strong:#1e63d6;
+--accent-ink:#14448f;--accent-tint:#e8f0fe;--accent-ondark:#5b9bff;--teal:#12b5c9;
+--grad:linear-gradient(135deg,#2f7df6,#12b5c9);--ok:#14794e;--ok-tint:#e5f6ee;--amber:#b04506;
+--amber-tint:#fdeee2;--red:#c62828;--red-tint:#fdecec;--radius:12px}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 'Inter',ui-sans-serif,system-ui,'Segoe UI',Roboto,sans-serif}
 main{max-width:1040px;margin:0 auto;padding:48px 24px 64px}
-h1,h2{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.2;margin:0}
+h1,h2{font-family:'Space Grotesk','Segoe UI',ui-sans-serif,sans-serif;font-weight:600;line-height:1.2;margin:0}
+.hero{background:var(--navy);color:var(--td);border-radius:var(--radius);padding:32px 28px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--grad)}
+.hero .eyebrow{color:var(--accent-ondark)}.hero .lead{color:var(--td-soft)}
 h1{font-size:2.3rem}h2{font-size:1.45rem;margin:40px 0 12px}
 .eyebrow{color:var(--accent);font-weight:600;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
 .lead{color:var(--soft);font-size:1.08rem;max-width:720px;margin:12px 0 0}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:28px}
 .card{background:var(--raised);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
-.card b{display:block;font-family:'Fraunces',Georgia,serif;font-size:1.9rem;line-height:1.1}
+.card b{display:block;font-family:'Space Grotesk','Segoe UI',ui-sans-serif,sans-serif;font-size:1.9rem;line-height:1.1}
 .card span{color:var(--faint);font-size:.85rem}
 table{width:100%;border-collapse:collapse;background:var(--raised);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;font-size:.93rem}
 th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
@@ -34,12 +39,12 @@ tr:last-child td{border-bottom:0}.num{text-align:right;white-space:nowrap}
 footer{margin-top:48px;color:var(--faint);font-size:.85rem;border-top:1px solid var(--line);padding-top:16px}
 a{color:var(--accent)}
 @media (max-width:640px){main{padding:28px 16px}.finding{grid-template-columns:1fr;gap:4px}h1{font-size:1.8rem}}
-@media print{body{background:#fff}main{padding:0}.module,.card,table{box-shadow:none}}
+@media print{body{background:#fff}main{padding:0}.hero{-webkit-print-color-adjust:exact;print-color-adjust:exact}.module,.card,table{box-shadow:none}}
 </style></head><body><main>
-<div class="eyebrow">Upgrade Readiness Report · Sample: Dhiren&#x27;s App Store apps</div>
+<header class="hero"><div class="eyebrow">Upgrade Readiness Report · Sample: Dhiren&#x27;s App Store apps</div>
 <h1>Odoo 18 to Odoo 20</h1>
 <p class="lead">3 custom modules checked against the Odoo 20 source:
-what will break, what Odoo itself has deprecated, and the effort. Generated 24 Oct 2026.</p>
+what will break, what Odoo itself has deprecated, and the effort. Generated 24 Oct 2026.</p></header>
 <div class="cards">
 <div class="card"><b>3</b><span>modules that break</span></div>
 <div class="card"><b>0</b><span>modules that need care</span></div>
