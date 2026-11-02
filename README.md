@@ -64,4 +64,4 @@ something or flagged something that was fine. Please include the Odoo versions, 
 
 ## Licence
 
-LGPL-3.0, the same licence as Odoo Community. See [LICENSE](LICENSE).
+LGPL-3.0, the same licence as Odoo Community. Copyright (C) 2026 Dhiren Narola. See [LICENSE](LICENSE) (LGPL-3) and [COPYING](COPYING) (the GPL-3 it builds on).
