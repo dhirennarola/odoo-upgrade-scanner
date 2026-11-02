@@ -1,6 +1,6 @@
 # Odoo Upgrade Readiness Scanner: notes for Claude
 
-- Dhiren Narola's own product (not TTS, not a client). Never put client or TTS code in this repo;
+- Dhiren Narola's own product, open source (LGPL-3, public repo). Never put client code in this repo;
   scan client code only with written permission, outside the repo.
 - Python 3.11+, standard library only (no install needed). Tests: `python -m pytest -q tests`
   (fake target tree in the test; never needs the real Odoo source).
@@ -17,5 +17,4 @@
     other POS addons `(config)`), so signatures are compared with the modules the custom module depends on.
   - JS patches add new methods freely; only a patched method that calls `super.x` must exist in the target.
   - Odoo 20 Owl exports look like `name: () => name`; Odoo 19 like `exports.name = name`.
-- Plan and offer: doc "Odoo Upgrade Readiness Offer" https://claude.ai/artifact/5p3ESbFjcK51eaMG8ND4Y9
-  (next: Claude summary step, optional install test in Docker, effort model tuned on real migrations).
+- Next steps: Claude summary step, optional install test in Docker, effort model tuned on real migrations.

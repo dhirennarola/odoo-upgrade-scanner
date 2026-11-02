@@ -19,7 +19,10 @@ python -m upgrade_scanner path/to/custom_addons --odoo path/to/odoo20/odoo --ent
 - `--source 16`: optional; by default the version is read from the manifests.
 
 The first run reads the whole target source (about 2 minutes) and caches an index in
-`%LOCALAPPDATA%\odoo-upgrade-scanner`. Later runs take seconds.
+`%LOCALAPPDATA%\odoo-upgrade-scanner` (Windows) or `~/.cache/odoo-upgrade-scanner`
+(macOS and Linux). Later runs take seconds.
+
+Python 3.11 or newer, standard library only: nothing to install.
 
 ## What it checks
 
@@ -51,3 +54,14 @@ POS Product Quick Favourites), each ported by hand from 18 to 19 to 20:
 ```bash
 python -m pytest -q tests
 ```
+
+## Contributing
+
+Issues and pull requests are welcome. Most useful: a real upgrade where the scanner missed
+something or flagged something that was fine. Please include the Odoo versions, the module
+(or a small piece of it) and what you expected. New rules go in `rules.py` with a test in
+`tests/test_scanner.py`.
+
+## Licence
+
+LGPL-3.0, the same licence as Odoo Community. See [LICENSE](LICENSE).

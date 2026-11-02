@@ -3,8 +3,13 @@ name = "odoo-upgrade-scanner"
 version = "0.1.0"
 description = "Odoo Upgrade Readiness Scanner: what breaks in your custom modules on the next Odoo version"
 authors = [{ name = "Dhiren Narola", email = "hello@dhirennarola.com" }]
+license = "LGPL-3.0-only"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/dhirennarola/odoo-upgrade-scanner"
+Issues = "https://github.com/dhirennarola/odoo-upgrade-scanner/issues"
 
 [project.optional-dependencies]
 test = ["pytest"]
